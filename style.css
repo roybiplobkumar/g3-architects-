@@ -153,6 +153,13 @@ nav {
   width: 100%;
 
 }
+.Experience_btn{
+  margin: 0;
+  border-radius: 8px;
+  position: relative;
+  top: -4.5rem;
+  left: 54px;
+}
 /* **************** experience style  end************** */
 
 /* ------------media quare style hare ------- */
