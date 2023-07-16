@@ -17,7 +17,18 @@
   font-size: 20px;
   font-weight: 600;
   border: 0;
- margin: 50px 45%;
+  margin: 50px 45%;
+}
+.discription_primary {
+  color: #727272;
+  text-align: center;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 30px 0px;
+}
+
+main {
+  padding: 45px 240px;
 }
 
 /* -----------shared style css end ---------- */
@@ -47,16 +58,10 @@ nav {
   font-size: 64px;
   font-weight: 700;
 }
-.banner_discription {
-  color: #727272;
-  text-align: center;
-  font-weight: 400;
-  line-height: 26px;
-  margin: 30px 0px;
-}
-.manu{
+
+.manu {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 .nav_manu ul li {
   list-style: none;
@@ -79,29 +84,60 @@ nav {
 
 /* ---------------------------- header style end ------------ */
 
+/* ----------------future style css  start---------- */
+
+.future_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 46px;
+}
+
+.future_img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.future_container_text h3 {
+  color: #727272;
+  font-size: 45px;
+  font-weight: 500;
+}
+.of_our {
+  color: #131313;
+  font-weight: 700;
+}
+.features {
+  color: #ff900e;
+  font-weight: 700;
+
+}
+.future_btn{
+  margin: 0px;
+  width: 180px;
+}
+
+/* ----------------future style css end ---------- */
 
 /* ------------media quare style hare ------- */
 
-
 /* ---------------- responsive for small  devices -----  */
 
-@media screen and (max-width:576px ) {
-  
-  body{
+@media screen and (max-width: 576px) {
+  body {
     margin-right: 0px;
     padding: 0px;
   }
-  nav, .nav_manu ul{
+  nav,
+  .nav_manu ul {
     flex-direction: column;
-   
   }
 
- header{
-  padding: 0px;
-  margin-right: 0px;
- }
-.btn_primary{
-  margin: 10px 30%;
+  header {
+    padding: 0px;
+    margin-right: 0px;
+  }
+  .btn_primary {
+    margin: 10px 30%;
+  }
 }
-
-  }
