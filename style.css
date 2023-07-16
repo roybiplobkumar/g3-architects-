@@ -129,15 +129,20 @@ nav {
     padding: 0px;
   }
   nav,
-  .nav_manu ul {
+  .nav_manu ul, .future_container {
     flex-direction: column;
   }
 
-  header {
-    padding: 0px;
-    margin-right: 0px;
+  .future_img{
+    grid-template-columns: repeat(1, 1fr);
   }
-  .btn_primary {
-    margin: 10px 30%;
+  header  ,main{
+    padding: 30px;
+    
+  }
+
+  .btn_primary ,.future_btn{
+    display: block;
+    margin: 7px auto;
   }
 }
