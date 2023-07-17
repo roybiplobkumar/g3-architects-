@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Lato", sans-serif;
   font-family: "Work Sans", sans-serif;
 }
@@ -31,7 +32,7 @@ main {
   padding: 45px 240px;
 }
 
-section{
+section {
   margin-bottom: 150px;
 }
 /* -----------shared style css end ---------- */
@@ -130,30 +131,31 @@ nav {
 }
 
 .card {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
   border-radius: 8px;
   background: #fff;
   padding: 30px 33px;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
 }
-.future_tittle{
-  border-left: 5px solid #FF900E;
- text-align: start;
- padding: 1.5rem;
+.future_tittle {
+  border-left: 5px solid #ff900e;
+  text-align: start;
+  padding: 1.5rem;
 }
-.box2_discription{
+.box2_discription {
   padding: 1.5rem 0rem;
-
 }
 .card_tittle {
   color: #131313;
   font-size: 20px;
   font-weight: 600;
 }
-.box2_img img{
+.box2_img img {
   width: 100%;
-
 }
-.Experience_btn{
+.Experience_btn {
   margin: 0;
   border-radius: 8px;
   position: relative;
@@ -162,22 +164,39 @@ nav {
 }
 /* **************** experience style  end************** */
 
+/* *********************some fact style ***************** */
+.somefact_card {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 0;
+}
+
+.fact_card {
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  text-align: center;
+}
+
+/* *********************some fact style ***************** */
+
 /* ------------media quare style hare ------- */
 
 /* ---------------- responsive for small  devices -----  */
 
 @media screen and (max-width: 576px) {
   body {
-    margin-right: 0px;
     padding: 0px;
   }
   nav,
   .nav_manu ul,
-  .future_container {
+  .future_container,
+  .box2,.somefact_card {
     flex-direction: column;
   }
 
-  .future_img {
+  .future_img,
+  .card {
     grid-template-columns: repeat(1, 1fr);
   }
   header,
@@ -188,6 +207,16 @@ nav {
   .btn_primary,
   .future_btn {
     display: block;
-    margin: 7px auto;
+    margin: 3px auto;
+  }
+  .Experience_btn {
+    position: static;
+  }
+  .box2_img img {
+    width: 100%;
+    margin: 0;
+  }
+  .banner_tittle {
+    margin: 0px;
   }
 }
